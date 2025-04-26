@@ -18,3 +18,8 @@ body {
     width: 350px;
   }
   
+  .emoji-container h1 {
+    margin-bottom: 20px;
+    color: #6a11cb;
+  }
+  
