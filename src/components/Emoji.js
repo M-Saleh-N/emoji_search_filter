@@ -29,6 +29,15 @@ function EmojiSearch() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
+      <div className="emoji-list">
+        {filteredEmojis.map((e, index) => (
+          <div key={index} className="emoji-item">
+            <span className="emoji">{e.emoji}</span>
+            <span className="emoji-name">{e.name}</span>
+          </div>
+        ))}
+        {filteredEmojis.length === 0 && <p>No emojis found 😢</p>}
+      </div>
     </div>
   );
 }
