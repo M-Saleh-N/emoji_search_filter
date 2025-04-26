@@ -23,3 +23,13 @@ body {
     color: #6a11cb;
   }
   
+  .emoji-container input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #6a11cb;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
