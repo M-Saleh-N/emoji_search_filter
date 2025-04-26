@@ -19,5 +19,17 @@ function EmojiSearch() {
   const filteredEmojis = emojiList.filter((e) =>
     e.name.toLowerCase().includes(search.toLowerCase())
   );
+
+  return (
+    <div className="emoji-container">
+      <h1>Emoji Search 🔎</h1>
+      <input
+        type="text"
+        placeholder="Search for an emoji..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+    </div>
+  );
 }
 
