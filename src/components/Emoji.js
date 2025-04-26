@@ -14,6 +14,10 @@ const emojiList = [
 ];
 
 function EmojiSearch() {
+  const [search, setSearch] = useState("");
 
+  const filteredEmojis = emojiList.filter((e) =>
+    e.name.toLowerCase().includes(search.toLowerCase())
+  );
 }
 
