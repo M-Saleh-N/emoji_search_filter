@@ -42,4 +42,4 @@ function EmojiSearch() {
   );
 }
 
-export default EmojiSearch()
+export default EmojiSearch;
